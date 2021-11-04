@@ -1,7 +1,7 @@
 package com.company;
 
-import lombok.*;
-import lombok.experimental.FieldDefaults;
+
+import lombok.Getter;
 
 import java.util.concurrent.ThreadLocalRandom;
 
