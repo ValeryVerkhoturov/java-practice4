@@ -1,0 +1,59 @@
+Персонаж с максимальным количеством hp
+Character(hp=1424, atk=8, elementsMastery=18, endurance=15, archon=GREAT, criticalHitChance=17)
+
+Персонаж с минимальным количеством hp
+Character(hp=53, atk=18, elementsMastery=3, endurance=10, archon=BRAVE, criticalHitChance=14)
+
+Сортировать персонажей по силе атаки, выбрать только тех, у кого меньше 100
+Character(hp=53, atk=18, elementsMastery=3, endurance=10, archon=BRAVE, criticalHitChance=14)
+
+Сортировать персонажей по силе атаки, выбрать только тех, у кого больше или равно 100
+Character(hp=185, atk=8, elementsMastery=15, endurance=4, archon=STREAMY, criticalHitChance=7)
+Character(hp=274, atk=11, elementsMastery=2, endurance=11, archon=GREAT, criticalHitChance=9)
+Character(hp=487, atk=11, elementsMastery=3, endurance=0, archon=WISE, criticalHitChance=6)
+Character(hp=594, atk=15, elementsMastery=15, endurance=17, archon=STREAMY, criticalHitChance=10)
+Character(hp=681, atk=5, elementsMastery=13, endurance=14, archon=BRAVE, criticalHitChance=18)
+Character(hp=718, atk=3, elementsMastery=5, endurance=11, archon=GREAT, criticalHitChance=13)
+Character(hp=889, atk=11, elementsMastery=17, endurance=7, archon=STREAMY, criticalHitChance=10)
+Character(hp=967, atk=2, elementsMastery=1, endurance=16, archon=BRAVE, criticalHitChance=5)
+Character(hp=1053, atk=17, elementsMastery=14, endurance=19, archon=STREAMY, criticalHitChance=3)
+Character(hp=1077, atk=2, elementsMastery=16, endurance=19, archon=BRAVE, criticalHitChance=19)
+Character(hp=1186, atk=12, elementsMastery=9, endurance=8, archon=WISE, criticalHitChance=0)
+Character(hp=1187, atk=3, elementsMastery=17, endurance=13, archon=BRAVE, criticalHitChance=1)
+Character(hp=1392, atk=12, elementsMastery=2, endurance=13, archon=BRAVE, criticalHitChance=2)
+Character(hp=1424, atk=8, elementsMastery=18, endurance=15, archon=GREAT, criticalHitChance=17)
+
+Выборка по рандомному типу архонта, умножить произольную характеристику на 2
+Собрать выборку в List, вывести
+Character(hp=370, atk=8, elementsMastery=15, endurance=4, archon=STREAMY, criticalHitChance=7)
+Character(hp=1778, atk=11, elementsMastery=17, endurance=7, archon=STREAMY, criticalHitChance=10)
+Character(hp=594, atk=15, elementsMastery=30, endurance=17, archon=STREAMY, criticalHitChance=10)
+Character(hp=1053, atk=17, elementsMastery=14, endurance=38, archon=STREAMY, criticalHitChance=3)
+
+Найти персонажа со значением характеристики силы атаки в 1337, поместить в Optional,
+Если объект существует, то вывести 133t, иначе No 133t
+No 133t
+
+Посчитать для каждой специализации количество персонажей. Вывести
+BRAVE
+Character(hp=681, atk=5, elementsMastery=13, endurance=14, archon=BRAVE, criticalHitChance=18)
+Character(hp=967, atk=2, elementsMastery=1, endurance=16, archon=BRAVE, criticalHitChance=5)
+Character(hp=53, atk=18, elementsMastery=3, endurance=10, archon=BRAVE, criticalHitChance=14)
+Character(hp=1187, atk=3, elementsMastery=17, endurance=13, archon=BRAVE, criticalHitChance=1)
+Character(hp=1077, atk=2, elementsMastery=16, endurance=19, archon=BRAVE, criticalHitChance=19)
+Character(hp=1392, atk=12, elementsMastery=2, endurance=13, archon=BRAVE, criticalHitChance=2)
+
+STREAMY
+Character(hp=370, atk=8, elementsMastery=15, endurance=4, archon=STREAMY, criticalHitChance=7)
+Character(hp=1778, atk=11, elementsMastery=17, endurance=7, archon=STREAMY, criticalHitChance=10)
+Character(hp=594, atk=15, elementsMastery=30, endurance=17, archon=STREAMY, criticalHitChance=10)
+Character(hp=1053, atk=17, elementsMastery=14, endurance=38, archon=STREAMY, criticalHitChance=3)
+
+WISE
+Character(hp=487, atk=11, elementsMastery=3, endurance=0, archon=WISE, criticalHitChance=6)
+Character(hp=1186, atk=12, elementsMastery=9, endurance=8, archon=WISE, criticalHitChance=0)
+
+GREAT
+Character(hp=1424, atk=8, elementsMastery=18, endurance=15, archon=GREAT, criticalHitChance=17)
+Character(hp=274, atk=11, elementsMastery=2, endurance=11, archon=GREAT, criticalHitChance=9)
+Character(hp=718, atk=3, elementsMastery=5, endurance=11, archon=GREAT, criticalHitChance=13)
