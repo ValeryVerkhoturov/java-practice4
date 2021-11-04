@@ -1,7 +1,6 @@
 package com.company;
 
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -19,15 +18,16 @@ public enum Archon {
     }
 
     public static Archon randomType(){
-        switch (ThreadLocalRandom.current().nextInt(values().length)){
-            case 0:
-                return Archon.BRAVE;
-            case 1:
-                return Archon.STREAMY;
-            case 2:
-                return Archon.WISE;
-            default:
-                return Archon.GREAT;
-        }
+        return values()[ThreadLocalRandom.current().nextInt(values().length)];
+//        switch (ThreadLocalRandom.current().nextInt(values().length)){
+//            case 0:
+//                return Archon.BRAVE;
+//            case 1:
+//                return Archon.STREAMY;
+//            case 2:
+//                return Archon.WISE;
+//            default:
+//                return Archon.GREAT;
+//        }
     }
 }
