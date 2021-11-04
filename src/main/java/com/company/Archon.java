@@ -1,7 +1,7 @@
 package com.company;
 
-
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -12,7 +12,7 @@ public enum Archon {
     GREAT(3);
 
     @Getter
-    private int code;
+    private final int code;
 
     Archon(int code) {
         this.code = code;
