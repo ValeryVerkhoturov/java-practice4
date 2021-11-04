@@ -19,15 +19,5 @@ public enum Archon {
 
     public static Archon randomType(){
         return values()[ThreadLocalRandom.current().nextInt(values().length)];
-//        switch (ThreadLocalRandom.current().nextInt(values().length)){
-//            case 0:
-//                return Archon.BRAVE;
-//            case 1:
-//                return Archon.STREAMY;
-//            case 2:
-//                return Archon.WISE;
-//            default:
-//                return Archon.GREAT;
-//        }
     }
 }
