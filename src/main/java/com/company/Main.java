@@ -11,18 +11,25 @@ public class Main {
 
     public static void main(String[] args) {
         ArrayList<Character> characters = newRandomCharacters();
+        
         taskA(characters);
         System.out.println();
+        
         taskB(characters);
         System.out.println();
+        
         taskC(characters);
         System.out.println();
+        
         taskD(characters);
         System.out.println();
+        
         taskE(characters);
         System.out.println();
+        
         taskF(characters);
         System.out.println();
+        
         taskG(characters);
     }
 
