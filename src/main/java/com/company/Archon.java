@@ -6,10 +6,10 @@ import lombok.RequiredArgsConstructor;
 import java.util.concurrent.ThreadLocalRandom;
 
 public enum Archon {
-    BRAVE(0),
-    STREAMY(1),
-    WISE(2),
-    GREAT(3);
+    BRAVE(Constants.ARCHON_BRAVE_CODE.getPoints()),
+    STREAMY(Constants.ARCHON_STREAMY_CODE.getPoints()),
+    WISE(Constants.ARCHON_WISE_CODE.getPoints()),
+    GREAT(Constants.ARCHON_GREAT_CODE.getPoints());
 
     @Getter
     private final int code;
