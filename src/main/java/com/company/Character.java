@@ -2,10 +2,12 @@ package com.company;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.concurrent.ThreadLocalRandom;
 
 @Data
+@NoArgsConstructor
 @Builder
 public class Character {
 
