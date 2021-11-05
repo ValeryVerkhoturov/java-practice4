@@ -35,7 +35,7 @@ public class Main {
 
     public static List<Character> newRandomCharacters(){
         int charactersAmmount = 15;
-        return IntStream.range(0, charactersAmmount).mapToObj(i -> Character.builder().build()).collect(Collectors.toList());
+        return IntStream.range(0, charactersAmmount).mapToObj(i -> Character.randomBuilder().build()).collect(Collectors.toList());
     }
 
     public static void taskA(List<Character> characters){
