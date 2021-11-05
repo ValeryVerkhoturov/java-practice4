@@ -12,7 +12,7 @@ import java.util.concurrent.ThreadLocalRandom;
 @Builder(builderMethodName = "randomBuilder")
 public class Character {
 
-    @Builder.Default() @NonNull
+    @Builder.Default @NonNull
     int hp = ThreadLocalRandom.current().nextInt(Constants.MIN_HP.getPoints(), Constants.MAX_HP.getPoints());
 
     @Builder.Default @NonNull
