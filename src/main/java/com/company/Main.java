@@ -11,6 +11,9 @@ public class Main {
 
     public static void main(String[] args) {
         List<Character> characters = newRandomCharacters();
+        System.out.println("Исходный массив");
+        characters.forEach(System.out::println);
+        System.out.print("\n\n\n\n\n");
         
         taskA(characters);
         System.out.println();
@@ -31,6 +34,7 @@ public class Main {
         System.out.println();
         
         taskG(characters);
+
     }
 
     public static List<Character> newRandomCharacters(){
@@ -40,12 +44,12 @@ public class Main {
 
     public static void taskA(List<Character> characters){
         System.out.println("Персонаж с максимальным количеством hp");
-        System.out.println(characters.stream().max(Comparator.comparing(Character::getHp)).orElseThrow());
+        characters.stream().max(Comparator.comparing(Character::getHp)).ifPresent(System.out::println);
     }
 
     public static void taskB(List<Character> characters){
         System.out.println("Персонаж с минимальным количеством hp");
-        System.out.println(characters.stream().min(Comparator.comparing(Character::getHp)).orElseThrow());
+        characters.stream().min(Comparator.comparing(Character::getHp)).ifPresent(System.out::println);
     }
 
     public static void taskC(List<Character> characters){
@@ -92,7 +96,7 @@ public class Main {
     }
 
     public static void taskG(List<Character> characters){
-        System.out.println("Посичтать для каждой специализации количество персонажий. Посчитать, вывести.");
+        System.out.println("Посчитать для каждой специализации количество персонажий. Посчитать, вывести.");
         Arrays.stream(Archon.values()).forEach(archon -> {
             System.out.println(archon + " - " + characters.stream().filter(ch -> ch.getArchon() == archon).count());
             characters.stream().filter(ch -> ch.getArchon() == archon).forEach(System.out::println);
